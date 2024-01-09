@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #212529;
+            border-bottom: 4px solid #ffc107;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+            color: #ffffff;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #212529;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #6c757d;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .skills-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #212529;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            border-radius: 5px;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .projects-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #212529;
+        }
+
+        .project-filter {
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #212529;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Your Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Hello, I'm Your Name</h1>
+            <p class="lead">A passionate web developer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="text-center">I am a dedicated web developer with a strong foundation in front-end and back-end technologies. I love turning ideas into reality through coding and creating seamless user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-4 skill">
+                    <h4>HTML</h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 skill">
+                    <h4>CSS</h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 skill">
+                    <h4>JavaScript</h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+
+            <!-- Project Filtering -->
+            <div class="text-center project-filter">
+                <button class="btn btn-outline-primary" data-filter="all">All</button>
+                <button class="btn btn-outline-primary" data-filter="web">Web</button>
+                <button class="btn btn-outline-primary" data-filter="mobile">Mobile</button>
+                <!-- Add more categories as needed -->
+            </div>
+
+            <!-- Project Cards -->
+            <div class="row">
+                <div class="col-md-4 project-card web">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card mobile">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of Project 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card web">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Description of Project 3.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS for Project Filtering -->
+    <script>
+        $(document).ready(function() {
+            // Project Filtering
+            $('.project-filter button').click(function() {
+                var filterValue = $(this).attr('data-filter');
+                if (filterValue == 'all') {
+                    $('.project-card').show('1000');
+                } else {
+                    $('.project-card').not('.' + filterValue).hide('3000');
+                    $('.project-card').filter('.' + filterValue).show('3000');
+                }
+            });
+
+            // Add active class to the current button (highlight it)
+            $('.project-filter button').click(function() {
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
