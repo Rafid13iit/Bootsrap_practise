@@ -1,1 +1,1 @@
-<h2>Practised bootstrap</h2>
+<h1>Practised Bootstrap</h1>
